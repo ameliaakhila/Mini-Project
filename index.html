@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Flex Residence</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Animate On Scroll CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome JS CDN -->
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.7.2-web//css/all.min.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <!-- navbar -->
+        <nav class="nav">
+            <div class="logo">
+                <a href="./index.html" style="text-decoration: none">
+                    <h2>
+                        MyFlex <br />
+                        <span id="black-title">Residence</span>
+                    </h2>
+                </a>
+            </div>
+            <div class="nav_menu" id="nav_menu">
+                <button class="close_btn" id="close_btn">
+                    <i class="fa fa-arrow-right"></i>
+                </button>
+
+                <ul class="nav_menu_list">
+                    <li class="nav_menu_item">
+                        <a href="./index.html" class="nav_menu_link menu_active">Beranda</a>
+                    </li>
+                    <li class="nav_menu_item">
+                        <a href="#tipe-rumah" class="nav_menu_link">Tipe Rumah</a>
+                    </li>
+                    <li class="nav_menu_item"><a href="#fasilitas" class="nav_menu_link">Fasilitas</a></li>
+                    <li class="nav_menu_item"><a href="#about" class="nav_menu_link">Tentang Kami</a></li>
+                    <li class="nav_menu_item kontak"><a
+                            href="https://wa.me/6288291375357?text=Halo%20MyFlex%20Residence%20saya%20mau%20tanya%20seputar%20pemesanan%20rumah"
+                            class="nav_menu_link">Kontak</a></li>
+                </ul>
+            </div>
+
+            <button class="toggle_btn" id="toggle_btn">
+                <i class="fa fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- section -->
+    <section class="wrapper-home" id="home">
+        <div class="container">
+            <div class="grid-cols-2">
+                <div class="grid-item-1">
+                    <h1 class="main-heading">
+                        Selamat Datang Di <span>MyFlex Residence.</span>
+                    </h1>
+                    <p class="info-text">
+                        Selamat datang di MyFlex Residence, tempat yang nyaman dan aman
+                        untuk Anda tinggal. Kami menawarkan berbagai jenis rumah yang
+                        dapat Anda pilih sesuai dengan kebutuhan anda
+                    </p>
+                    <div class="btn_wrapper">
+                        <button class="btn_home view_more_btn">
+                            Kontak Kami <i class="fa fa-phone"></i>
+                        </button>
+                        <button class="btn_home documentation_btn" id="home">
+                            Info Detail
+                        </button>
+                    </div>
+                </div>
+                <div class="grid-item-2">
+                    <div class="team_img_wrapper">
+                        <img src="assets/img/home/home.png" alt="home" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section end -->
+
+    <!-- section home type -->
+    <section class="container pt-4 pb-4 mt-2 mb3 fasilitas section-offset" id="tipe-rumah">
+        <h1 class="text-center my-5 menu_active" data-aos="fade-up" data-aos-duration="1000">Type Rumah Yang Tersedia
+        </h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/home/house-1.png" class="card-img-top" alt="Danalys Home">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Danalys Home</h4>
+                            <p class="card-text">Rumah modern dengan desain minimalis yang nyaman untuk keluarga Anda.
+                            </p>
+                            <a href="#" class="btn btn-primary">MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/home/house-2.png" class="card-img-top" alt="UX Home">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">UX Home</h4>
+                            <p class="card-text">Hunian asri dengan lingkungan yang hijau dan fasilitas lengkap.</p>
+                            <a href="#" class="btn btn-primary">MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/home/house-3.png" class="card-img-top" alt="Dev Home">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Dev Home</h4>
+                            <p class="card-text">Rumah mewah dengan desain elegan dan fasilitas premium.</p>
+                            <a href="#" class="btn btn-primary">MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- section home type end -->
+    <!-- section fasilitas -->
+    <section class="container pt-4 pb-4 mt-2 mb3 fasilitas section-offset" id="fasilitas">
+        <h1 class="text-center my-5 menu_active" data-aos="fade-up" data-aos-duration="1000">Fasilitas Yang Dimiliki
+        </h1>
+        <div class="row mb-5" data-aos="fade-right" data-aos-duration="3000">
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h2 class="mb-3">Swimming in the FE POOLS</h2>
+                <p>Untuk Anda yang gemar berenang, kami menyediakan kolam renang FE POOLS yang modern dan elegan.
+                    Nikmati pengalaman berenang dengan pemandangan yang menakjubkan dan suasana yang tenang. Kolam
+                    renang FE POOLS kami dirancang dengan teknologi terbaru untuk memberikan pengalaman berenang yang
+                    luar biasa. Dengan air yang jernih dan pemandangan yang memukau, Anda dapat bersantai dan menikmati
+                    waktu berkualitas bersama keluarga dan teman-teman. Kolam renang ini juga dilengkapi dengan
+                    fasilitas keamanan yang canggih untuk memastikan keselamatan Anda selama berenang. Selain itu, area
+                    sekitar kolam renang dihiasi dengan taman yang indah, menciptakan suasana yang asri dan menyegarkan.
+                    Kami berkomitmen untuk memberikan fasilitas terbaik bagi Anda yang menginginkan kenyamanan dan
+                    kemewahan dalam satu paket.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/img/fasilitas/1.jpg" alt="kolam-renang" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        <div class="row mb-5" data-aos="fade-left" data-aos-duration="3000">
+            <div class="col-md-6 order-md-2 d-flex flex-column justify-content-center">
+                <h2 class="mb-3">Berolahraga di Let's GYM</h2>
+                <p>Untuk Anda yang gemar berolahraga, kami menyediakan Let's GYM yang lengkap dan modern.
+                    Nikmati berbagai fasilitas kebugaran seperti treadmill, angkat beban, dan kelas kebugaran yang
+                    dipandu oleh instruktur profesional. Let's GYM dirancang untuk memenuhi kebutuhan
+                    kebugaran Anda dengan peralatan terbaru dan suasana yang nyaman. Dengan lingkungan yang bersih dan
+                    terawat, Anda dapat berolahraga dengan tenang dan fokus. Kami juga menyediakan area relaksasi dan
+                    ruang ganti yang nyaman untuk kenyamanan Anda. Bergabunglah dengan komunitas kebugaran kami dan
+                    capai tujuan kesehatan Anda bersama kami.</p>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <img src="assets/img/fasilitas/2.jpg" alt="gym" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        <div class="row mb-5" data-aos="fade-right" data-aos-duration="3000">
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h2 class="mb-3">The Dev Coffe</h2>
+                <p>Untuk Anda yang gemar bersantai, kami menyediakan The Dev Coffe yang nyaman dan modern.
+                    Nikmati berbagai pilihan kopi, teh, dan makanan ringan yang lezat. Cafe kami dirancang dengan
+                    suasana yang hangat dan ramah, cocok untuk bersantai atau bekerja. Dengan Wi-Fi gratis dan
+                    area duduk yang nyaman, Anda dapat menikmati waktu berkualitas bersama teman atau keluarga.
+                    Kami juga menyediakan berbagai acara dan kegiatan menarik untuk menambah pengalaman Anda di
+                    The Dev Coffe. Datang dan nikmati suasana yang menyenangkan di Cafe The Dev.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/img/fasilitas/3.jpg" alt="cafe" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        <div class="row mb-5" data-aos="fade-left" data-aos-duration="3000">
+            <div class="col-md-6 order-md-2 d-flex flex-column justify-content-center">
+                <h2 class="mb-3">CDN Beautiful Garden</h2>
+                <p>Untuk Anda yang menyukai keindahan alam, kami menyediakan CDN Beautiful Garden yang menakjubkan.
+                    Nikmati pemandangan taman yang indah dengan berbagai jenis tanaman dan bunga yang berwarna-warni.
+                    Taman ini dirancang dengan estetika yang memukau dan suasana yang tenang, cocok untuk bersantai dan
+                    menikmati waktu luang. Dengan jalur pejalan kaki yang nyaman dan area duduk yang strategis, Anda
+                    dapat menikmati keindahan alam setiap hari. Bergabunglah dengan kami dan rasakan ketenangan serta
+                    keindahan di CDN Beautiful Garden.</p>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <img src="assets/img/fasilitas/4.jpg" alt="garden" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        <div class="row mb-5" data-aos="fade-right" data-aos-duration="3000">
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h2 class="mb-3">Sistem Keamanan 24/7 pemantauan CCTV</h2>
+                <p>Untuk Anda yang mengutamakan keamanan, kami menyediakan sistem keamanan 24/7 dengan pemantauan CCTV.
+                    Nikmati ketenangan pikiran dengan adanya kamera pengawas yang tersebar di seluruh area. Sistem
+                    keamanan kami dirancang untuk memberikan perlindungan maksimal bagi Anda dan keluarga. Dengan
+                    teknologi canggih
+                    dan tim keamanan yang profesional, kami memastikan lingkungan yang aman dan nyaman. Bergabunglah
+                    dengan kami dan
+                    rasakan keamanan yang tiada duanya di MyFlex Residence.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/img/fasilitas/5.jpg" alt="keamanan" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+    <!-- section fasilitas end -->
+
+    <!-- section tentang kami -->
+    <section class="container pt-4 pb-4 mt-2 mb3 tentang-kami section-offset" id="about">
+        <h1 class="text-center my-5 menu_active" data-aos="fade-up" data-aos-duration="1000">Tentang MyFlex Residence
+        </h1>
+        <div class="row" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+            <div class="col-md-6">
+                <p>MyFlex Residence adalah kompleks perumahan modern yang dirancang untuk memberikan kenyamanan dan
+                    keamanan bagi penghuninya. Kami menawarkan berbagai tipe rumah dengan desain yang elegan dan
+                    fasilitas lengkap untuk memenuhi kebutuhan Anda dan keluarga. Dengan lingkungan yang asri dan
+                    fasilitas yang lengkap, MyFlex Residence adalah tempat yang ideal untuk tinggal dan menikmati
+                    kehidupan yang berkualitas.</p>
+                <div class="social-media">
+                    <h5>Follow Us:</h5>
+                    <a href="https://github.com/ameliaakhila" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/ameliaa.o_c" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/amelia-akhila-05339622a" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="contact-person">
+                    <h5>Contact Us:</h5>
+                    <p>Email: info@myflexresidence.com</p>
+                    <p class="menu_active">Phone: +62 882 9137 5357</p>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <img src="assets/img/home/Home screen-rafiki (1).svg" alt="Tentang Kami"
+                    class="img-fluid mx-auto d-block" style="width: 400px;">
+            </div>
+        </div>
+    </section>
+    <!-- section tentang kami end -->
+
+    <!-- Bootsrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <br><br><br>
+    <Footer class="footer">
+        <div>Copyright &copy; Amelia Akhila 2025</div>
+    </Footer>
+    <!-- ==== SCRIPT.JS ==== -->
+    <script src="assets/js/script.js" defer></script>
+
+    <!-- ==== AOS JS CDN ==== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ==== GASP JS CDN ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+</body>
+
+</html>
