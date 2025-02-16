@@ -74,3 +74,12 @@ gsap.from(".fasilitas", {
   delay: 1.8,
   duration: 0.5,
 });
+
+window.addEventListener('scroll', (e)=>{
+    const nav = document.querySelector('.header');
+    if (window.pageYOffset >= 30){
+        nav.classList.add("shadow-header")
+    }else{
+        nav.classList.remove("shadow-header")
+    }
+})
